@@ -13,6 +13,7 @@ const donationCtrl = {
   createDonation: async (req, res) => {
     try {
       const newDonation = req.body;
+      console.log(newDonation);
       donationList.push({
         ...newDonation,
         id: Number(newDonation.id),
